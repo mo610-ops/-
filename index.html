@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b20">
+<title>شوشو حبيبتي ♡ — من مودي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700;800&family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+<style>
+:root{--night:#080a1c;--navy:#10132e;--pink:#f5a8c8;--rose:#ff78ae;--cream:#fff1e8;--muted:#c4bfd4;--line:rgba(255,204,229,.19);--glass:rgba(17,18,44,.66)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--night);color:var(--cream);font-family:'Cairo',sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}::selection{background:#f5a8c8;color:#111}
+#stars{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.85}.site{position:relative;z-index:1}.nav{position:fixed;top:0;right:0;left:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:17px clamp(18px,5vw,72px);background:linear-gradient(180deg,rgba(7,8,25,.9),rgba(7,8,25,.12));backdrop-filter:blur(10px)}.brand{font-family:'Amiri',serif;color:var(--pink);font-size:1.5rem;font-weight:700;letter-spacing:.5px}.navlinks{display:flex;gap:clamp(12px,2.5vw,30px);font-size:.85rem;color:#e3d8e9}.navlinks a{transition:color .25s}.navlinks a:hover{color:var(--rose)}.menu-btn{display:none;border:1px solid var(--line);background:#15152e;color:var(--pink);border-radius:50%;width:42px;height:42px}
+.hero{min-height:100svh;position:relative;display:grid;place-items:center;text-align:center;overflow:hidden;padding:120px 20px 72px;background:radial-gradient(ellipse at 50% 49%,#2b2254 0,#11152f 38%,#090b20 72%)}.hero:before{content:"";position:absolute;width:min(88vw,780px);aspect-ratio:1;border-radius:50%;top:8%;left:50%;transform:translateX(-50%);background:radial-gradient(circle,#fff7e7 0,#ffe8d1 27%,#e7c7d2 42%,#e9c2d0 48%,rgba(225,170,202,.25) 58%,transparent 71%);box-shadow:0 0 90px #eab8d366,0 0 200px #a7b3ff22;animation:moonBreath 7s ease-in-out infinite;opacity:.95}.moon-craters{position:absolute;width:min(88vw,780px);aspect-ratio:1;top:8%;left:50%;transform:translateX(-50%);border-radius:50%;pointer-events:none;opacity:.23;background:radial-gradient(ellipse at 34% 32%,#a28caa 0 2.2%,transparent 2.6%),radial-gradient(ellipse at 66% 25%,#aa95ae 0 3%,transparent 3.4%),radial-gradient(ellipse at 63% 62%,#a28caa 0 4.5%,transparent 4.9%),radial-gradient(ellipse at 36% 66%,#a28caa 0 2.7%,transparent 3.1%),radial-gradient(ellipse at 48% 45%,#a28caa 0 1.8%,transparent 2.2%);z-index:0}.hero-content{position:relative;z-index:5;max-width:850px;margin-top:70px}.eyebrow{font-size:.85rem;letter-spacing:3px;color:#f5c6dc;font-weight:600}.hero h1{font-family:'Amiri',serif;font-weight:700;font-size:clamp(3.3rem,8.8vw,7.8rem);line-height:1.1;margin:15px 0 4px;color:#ffe8ef;text-shadow:0 0 25px #f5a8c888,0 0 65px #e18bb555}.hero h1 span{color:var(--pink)}.hero-sub{font-family:'Amiri',serif;font-size:clamp(1.2rem,2.7vw,1.85rem);line-height:1.9;color:#eee0ed;max-width:700px;margin:18px auto 28px}.cta{display:inline-flex;align-items:center;gap:10px;border:1px solid #f7b6d0a3;border-radius:50px;padding:13px 28px;color:#ffe9f1;background:linear-gradient(135deg,#f08dbb35,#ffffff08);box-shadow:0 0 32px #f08dbb24;transition:.3s;font-weight:600}.cta:hover{transform:translateY(-3px);box-shadow:0 0 42px #f08dbb55;background:#f08dbb44}.scrollhint{display:block;margin-top:32px;color:#bdb4d0;font-size:.75rem;letter-spacing:2px}
+.skyline{position:absolute;bottom:-2px;left:0;right:0;height:26%;z-index:2;display:flex;align-items:flex-end;gap:5px;justify-content:space-around;opacity:.96}.building{position:relative;flex:1;max-width:105px;background:linear-gradient(180deg,#11132e,#080a1b);border-top:1px solid #b7a5d04a}.building:before{content:"";position:absolute;inset:10px 8px 5px;background:repeating-linear-gradient(90deg,transparent 0 11px,#f3b7d51b 11px 14px),repeating-linear-gradient(0deg,transparent 0 17px,#f3b7d522 17px 20px)}.building:nth-child(3n){max-width:58px}.building:nth-child(4n){clip-path:polygon(0 10%,50% 0,100% 10%,100% 100%,0 100%)}.building:nth-child(5n){max-width:130px}.city-glow{position:absolute;bottom:0;left:0;right:0;height:23%;background:linear-gradient(0deg,#080a1c 5%,transparent);z-index:3}.couple{position:absolute;bottom:8%;left:50%;transform:translateX(-50%);height:220px;width:210px;z-index:4;filter:drop-shadow(0 0 25px #e5a8ce44)}.person{position:absolute;bottom:0;background:linear-gradient(130deg,#18152d,#090a1b)}.person.left{left:30px;width:72px;height:135px;border-radius:45% 45% 12% 12%;transform:rotate(-5deg)}.person.right{right:24px;width:78px;height:145px;border-radius:45% 45% 12% 12%;transform:rotate(5deg)}.head{position:absolute;width:49px;height:57px;border-radius:48%;background:#17142a;top:-42px;left:12px}.left .head:after{content:"";position:absolute;right:-3px;top:0;width:24px;height:38px;border-radius:45%;background:#17142a}.right .head{width:45px;height:54px;left:15px;top:-40px}.arm{position:absolute;height:22px;width:102px;border-radius:30px;background:#1c1732;top:25px;left:-44px;transform:rotate(28deg);transform-origin:right center}.right .arm{left:-30px;top:29px;transform:rotate(-35deg)}.couple:after{content:"";position:absolute;width:110px;height:110px;border-radius:50%;border:1px solid #f3b6d533;left:50px;top:20px;box-shadow:0 0 40px #f3b6d526}
+section{position:relative;padding:105px clamp(20px,7vw,110px);scroll-margin-top:70px}.section-head{text-align:center;max-width:720px;margin:0 auto 52px}.kicker{color:var(--rose);font-size:.8rem;letter-spacing:3px;font-weight:700}.section-head h2{font-family:'Amiri',serif;font-size:clamp(2.4rem,5.2vw,4.2rem);margin:8px 0;color:#ffe7ef}.section-head p{color:var(--muted);line-height:2;margin:0;font-size:1rem}.story{background:linear-gradient(180deg,#0b0d23,#10102a 50%,#0b0d23)}.story-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:24px}.glass{border:1px solid var(--line);background:linear-gradient(145deg,rgba(32,28,62,.68),rgba(13,15,39,.76));border-radius:24px;padding:32px;box-shadow:0 15px 60px #00000028}.story-card .symbol{font-size:2rem;color:var(--pink)}.story-card h3{font-family:'Amiri',serif;font-size:1.8rem;color:#ffd7e7;margin:12px 0}.story-card p{color:#d7cfe0;line-height:2.15;margin:0;font-size:1.02rem}.poem{font-family:'Amiri',serif;font-size:1.55rem;line-height:2.2;color:#f5dce9;text-align:center;white-space:pre-line}.poem em{font-style:normal;color:var(--pink);font-weight:700}
+.poems-section{background:radial-gradient(ellipse at 50% 30%,#281a42 0,#101027 60%,#080a1c 100%)}.poems-grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.poem-card{padding:36px 28px;text-align:center;background:linear-gradient(145deg,rgba(40,32,70,.7),rgba(16,18,44,.8));border:1px solid rgba(245,168,200,.25);border-radius:24px;box-shadow:0 12px 40px #0004}.poem-card h3{font-family:'Amiri',serif;font-size:1.85rem;color:var(--pink);margin-bottom:16px}.poem-text{font-family:'Amiri',serif;font-size:1.4rem;line-height:2.2;color:#ffe8f3;white-space:pre-line}
+.letters{background:radial-gradient(ellipse at 50% 50%,#281a42 0,#101027 56%,#0a0c20 100%)}.letter-wrap{max-width:800px;margin:auto;perspective:1000px}.letter{position:relative;padding:clamp(28px,5vw,60px);background:linear-gradient(140deg,#f8eaef,#ecd4dc);color:#3e2942;border-radius:6px 6px 20px 6px;box-shadow:0 25px 90px #0008,0 0 0 8px #edc6d215;transform:rotate(-.5deg);overflow:hidden}.letter:before{content:"";position:absolute;inset:15px;border:1px solid #a86f8b55;pointer-events:none}.letter .to{font-family:'Amiri',serif;font-size:1.5rem;color:#9b4c73;font-weight:700}.letter h3{font-family:'Amiri',serif;font-size:clamp(1.9rem,4vw,2.8rem);margin:10px 0 20px;color:#703956}.letter p{position:relative;font-family:'Amiri',serif;font-size:1.35rem;line-height:2.1;margin:0 0 16px}.signature{font-family:'Reem Kufi Ink','Amiri',serif;color:#a44d79;font-size:1.9rem;text-align:left;margin-top:28px}.seal{position:absolute;bottom:24px;left:28px;font-size:2.3rem;opacity:.6}.letter-toggle{display:block;margin:32px auto 0}.hidden-letter{display:none}.hidden-letter.open{display:block;animation:fadeUp .6s ease}
+.love{background:#0b0d22}.love-grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.love-card{min-height:245px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform .35s,border-color .35s;cursor:pointer}.love-card:hover{transform:translateY(-8px);border-color:#f5a8c8aa}.love-card .icon{font-size:2.5rem;margin-bottom:10px;filter:drop-shadow(0 0 14px #f5a8c866)}.love-card h3{font-family:'Amiri',serif;font-size:1.65rem;color:#ffd8e7;margin:6px 0}.love-card p{font-size:.95rem;line-height:2;color:#cfc6da;margin:5px 0}.love-card .extra{display:none;color:#f5a8c8;margin-top:14px;font-weight:600}.love-card.active .extra{display:block;animation:fadeUp .35s ease}
+.memories{background:linear-gradient(180deg,#101027,#17112c 50%,#0b0d22)}.memory-grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.polaroid{background:#f8ede9;padding:14px 14px 25px;color:#4a3446;box-shadow:0 18px 40px #0005;transform:rotate(var(--tilt));transition:transform .35s;cursor:pointer}.polaroid:hover{transform:rotate(0deg) translateY(-10px) scale(1.03);z-index:2}.photo{height:240px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 36%,#f6d7e1 0 10%,transparent 10.5%),linear-gradient(180deg,#30264e,#8b547b 65%,#e4a6b7)}.photo:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 15%,#fff 0 1px,transparent 2px),radial-gradient(circle at 70% 24%,#fff 0 1px,transparent 2px),radial-gradient(circle at 80% 55%,#fff 0 1px,transparent 2px),linear-gradient(0deg,#13132a88,transparent 60%)}.photo .moon-mini{position:absolute;top:18px;right:25px;width:65px;height:65px;border-radius:50%;background:#fff0d8;box-shadow:0 0 35px #ffdfd5a8}.photo .hug{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:125px;height:115px}.hug:before,.hug:after{content:"";position:absolute;bottom:0;width:58px;height:86px;border-radius:40% 40% 0 0;background:#19152e}.hug:before{left:10px;transform:rotate(-8deg)}.hug:after{right:8px;transform:rotate(8deg)}.caption{font-family:'Amiri',serif;text-align:center;font-size:1.3rem;margin-top:14px;font-weight:700}.memory-note{text-align:center;color:#bcb2cd;font-size:.85rem;margin-top:34px}
+.timeline{background:#0a0c20}.timeline-line{max-width:780px;margin:auto;position:relative}.timeline-line:before{content:"";position:absolute;top:10px;bottom:10px;right:18px;width:2px;background:linear-gradient(#f5a8c8,#75649b,transparent)}.event{position:relative;padding:0 58px 45px 0}.dot{position:absolute;right:10px;top:6px;width:18px;height:18px;border-radius:50%;background:#f5a8c8;box-shadow:0 0 22px #f5a8c8c2;border:4px solid #25203e}.event time{font-size:.82rem;color:var(--rose);letter-spacing:1px;font-weight:700}.event h3{font-family:'Amiri',serif;font-size:1.8rem;color:#ffe0eb;margin:4px 0}.event p{color:#c9c1d6;line-height:2.05;margin:0;font-size:1rem}.date-card{display:inline-flex;align-items:center;gap:12px;margin-top:16px;padding:12px 20px;border:1px solid var(--line);border-radius:14px;color:#f6d9e8;background:#ffffff0a;font-weight:700}
+.together{min-height:82vh;display:grid;place-items:center;text-align:center;background:radial-gradient(ellipse at 50% 45%,#3d2146 0,#17122e 36%,#080a1c 75%);overflow:hidden}.together:before{content:"";position:absolute;width:450px;height:450px;border-radius:50%;background:radial-gradient(circle,#ffdfd0 0,#eeb9d6 32%,#e7a9d400 70%);opacity:.22;top:4%;left:50%;transform:translateX(-50%);filter:blur(6px)}.final-inner{position:relative;max-width:880px}.final-inner .tiny-moon{font-size:3.5rem;filter:drop-shadow(0 0 25px #f5a8c8)}.final-inner h2{font-family:'Amiri',serif;font-size:clamp(2.4rem,5.6vw,5rem);color:#ffe7ef;line-height:1.4;margin:15px 0;text-shadow:0 0 35px #f5a8c84d}.final-inner blockquote{font-family:'Amiri',serif;font-size:clamp(1.45rem,3.2vw,2.15rem);line-height:2.1;color:#f5b9d2;margin:20px 0;background:rgba(255,255,255,.03);padding:24px;border-radius:20px;border:1px solid var(--line)}.final-inner p{color:#c9bed3;line-height:2;font-size:1.05rem}.footer{text-align:center;padding:28px 15px 35px;background:#070819;color:#8e86a7;font-size:.8rem}.footer span{color:var(--pink)}
+.float{position:fixed;z-index:8;bottom:-40px;pointer-events:none;animation:floatUp linear forwards;opacity:0;color:#f5a8c8;text-shadow:0 0 14px #f5a8c8}.toast{position:fixed;bottom:25px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:50;background:#251d42;border:1px solid var(--line);color:#ffe7ef;padding:14px 26px;border-radius:50px;transition:.35s;box-shadow:0 10px 35px #0008;font-size:.95rem;font-weight:600}.toast.show{opacity:1;transform:translate(-50%,0)}
+@keyframes moonBreath{0%,100%{filter:brightness(1);transform:translateX(-50%) scale(1)}50%{filter:brightness(1.1);transform:translateX(-50%) scale(1.02)}}@keyframes floatUp{0%{transform:translateY(0) rotate(0deg) scale(.6);opacity:0}12%{opacity:.95}85%{opacity:.75}100%{transform:translateY(-110vh) rotate(35deg) scale(1.2);opacity:0}}@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@media(max-width:760px){.navlinks{display:none;position:absolute;top:70px;right:16px;left:16px;padding:20px;background:#10112aeF;border:1px solid var(--line);border-radius:18px;flex-direction:column;gap:17px}.navlinks.open{display:flex}.menu-btn{display:block}.hero:before,.moon-craters{top:12%;width:100vw}.hero-content{margin-top:100px}.couple{bottom:9%;transform:translateX(-50%) scale(.8);transform-origin:bottom}.skyline{height:23%}section{padding-top:78px;padding-bottom:78px}.story-grid{grid-template-columns:1fr}.poems-grid{grid-template-columns:1fr}.love-grid{grid-template-columns:1fr}.love-card{min-height:190px}.memory-grid{grid-template-columns:1fr;max-width:330px}.photo{height:270px}.polaroid{transform:rotate(var(--tilt))}.letter p{font-size:1.18rem}.letter{padding:28px}.timeline-line:before{right:12px}.event{padding-right:43px}.dot{right:4px}.seal{bottom:12px;left:15px}.final-inner blockquote{font-size:1.4rem;padding:16px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="site">
+<header class="nav">
+  <a class="brand" href="#home">شوشو ♡ مودي</a>
+  <nav class="navlinks" id="navlinks" aria-label="التنقل الرئيسي">
+    <a href="#story">قصتنا</a><a href="#poems">قصائد قمري</a><a href="#letters">رسائلنا</a><a href="#love">أحبك</a><a href="#memories">ذكرياتنا</a><a href="#little-things">تفاصيلك</a><a href="#timeline">معًا دائمًا</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="moon-craters"></div>
+  <div class="hero-content">
+    <div class="eyebrow">حكاية كُتبت بالحب والبهجة الأبدية</div>
+    <h1>شوشو <span>&</span> مودي</h1>
+    <p class="hero-sub">ليلي اكتمل بجمالكِ…<br>وكانت دنيايا تنتظر <span style="color:var(--pink)">قمرها المشرق</span> ليزهر كل شيء في وجودكِ.</p>
+    <a class="cta" href="#story">ابدأي حكايتنا الجميلة <span>♡</span></a>
+    <span class="scrollhint">انزلي قليلًا… فهنا عالمنا المليء بالفرح والشعر</span>
+  </div>
+  <div class="couple" aria-hidden="true"><div class="person left"><div class="head"></div><div class="arm"></div></div><div class="person right"><div class="head"></div><div class="arm"></div></div></div>
+  <div class="skyline" aria-hidden="true" id="skyline"></div><div class="city-glow"></div>
+</section>
+
+<section class="story" id="story">
+  <div class="section-head"><div class="kicker">الفصل الأول · فرحة القلوب</div><h2>قصتنا</h2><p>كل لحظة معكِ هي بداية حكاية جديدة ملونة بالسعادة والدفء؛ يكفي أن تبتسمي ليزهر العالم.</p></div>
+  <div class="story-grid">
+    <article class="glass story-card"><div class="symbol">☾</div><h3>عالمي مع قمر حياتي</h3><p>وجودكِ يملأ كل أوقاتي بالدفء والبهجة. وجهكِ الجميل وصوتكِ العذب هما طمأنينتي اليومية، ومكالماتنا الطويلة هي أجمل أوقات يومي حيث يمر الوقت معكِ كأنه لحظات خاطفة من السعادة.</p></article>
+    <article class="glass story-card"><div class="symbol">✧</div><h3>أشرقت دنيايا بوجودكِ</h3><p>أن تكوني في حياتي يعني أن كل شيء أوجَدَ معناه الجميل. بوجودكِ تبتسم الأيام، وتُشرق الليالي، ويصبح لكل تفصيلة صغيرة طعم السعادة الصافية. أنتِ بيتي وأجمل أمنياتي.</p></article>
+    <article class="glass story-card" style="grid-column:1/-1"><div class="poem">يا شوشو يا ضوءَ الفؤاد ونوره،
+يا ضحكةً تشفي القلوب وتُبهِجُ،
+إن جئتِ أشرقت الحياةُ بأسرها،
+وصار الليلُ بوجودكِ يتهللُ ويُشرِقُ.</div></article>
+    <article class="glass story-card"><div class="symbol">♡</div><h3>تفاصيلك الحلوة</h3><p>أعشق رؤية ابتسامتكِ وأنتِ تحكين لي، وأعشق نبرة صوتكِ في كل كلمة. ضحكاتكِ العفوية وأسئلتكِ الرقيقة تجعل أيامي مليئة بالحياة والأمل. التفاصيل الصغيرة هذه معكِ هي كنز قلبي الحقيقي.</p></article>
+    <article class="glass story-card"><div class="symbol">✧</div><h3>أيامنا القادمة المضيئة</h3><p>متحمس لكل لحظة قادمة نقضيها معًا؛ لنضحك بالساعات، ونحكي دون توقف، ونبني ذكريات يملؤها الحب والراحة وصدق المشاعر. وجودكِ في حياتي هو أجمل نِعَم ربي.</p></article>
+  </div>
+</section>
+
+<!-- Dedicated Arabic Love Poems Section -->
+<section class="poems-section" id="poems">
+  <div class="section-head"><div class="kicker">كلمات غزل من الأعماق</div><h2>قصائد قمري</h2><p>أبياتٌ صيغت بروح الفصحى والرومانسية، أهديها لعينيكِ الجميلتين يا شوشو.</p></div>
+  <div class="poems-grid">
+    <article class="poem-card">
+      <h3>أنتِ القمر الفريد</h3>
+      <div class="poem-text">سَأَلوا الصَّبَاحَ عَنِ الشُّرُوقِ فَأَبْصَرَا
+فِي عَيْنِ شُوشُو نُورَهُ والمَنْظَرَا
+
+قالوا أَمَا لِلَّيْلِ بَعْدُ كَوَاكِبٌ؟
+قُلْتُ القَمَرُ الحُلْوُ القَرِيبُ حَضَرَا!</div>
+    </article>
+
+    <article class="poem-card">
+      <h3>جنة العشاق</h3>
+      <div class="poem-text">يَا أَمِيرَةَ الرُّوحِ المَصُونَةَ إِنَّنِي
+أَرَى المَلاذَ فِي عَيْنَيْكِ والصَّفَا
+
+لَوْ أَهْدَتِ الدُّنْيَا لِقَلْبِي كُلَّهَا
+مَا اخْتَرْتُ غَيْرَكِ يَا مَلاكًا وَوَفَا</div>
+    </article>
+
+    <article class="poem-card">
+      <h3>نغمة الحنان</h3>
+      <div class="poem-text">تَتَكَلَّمِينَ فَيَسْتَكِينُ فُؤَادِي
+وَيَزُولُ كُلُّ الهَمِّ وَالإِجْهَادِ
+
+صَوْتٌ أَرَقُّ مِنَ النَّسِيمِ وَبَسْمَةٌ
+تَبْنِي الحَيَاةَ وتَمْلأُ الأَعْيَادِ</div>
+    </article>
+
+    <article class="poem-card">
+      <h3>حبٌ بلا حدود</h3>
+      <div class="poem-text">شُوشُو هِيَ البَدْرُ المُنِيرُ لِعَالَمِي
+وَهِيَ الحَكَايا والأَمَانِي الكُبْرَى
+
+مَا كُنْتُ قَبْلَكِ لِلْمَحَبَّةِ عَارِفًا
+حَتَّى غَدَوْتِ لِكُلِّ قَلْبِي السِّحْرَا</div>
+    </article>
+  </div>
+</section>
+
+<section class="letters" id="letters">
+  <div class="section-head"><div class="kicker">كلماتٌ تُكتب بالحب الخالص</div><h2>رسائلنا</h2><p>رسالة عشق واعتزاز من مودي إلى شوشو — كلمات تصوغ مدى امتناني لوجودكِ.</p></div>
+  <div class="letter-wrap">
+    <article class="letter">
+      <div class="to">إلى شوشو، قمري المشرق وروح قلبي…</div>
+      <h3>من قلبٍ ينبض بحبكِ وحمدِ الله عليكِ</h3>
+      <p>حبيبتي الغالية شوشو،</p>
+      <p>أردتُ أن أكتب لكِ هذه الكلمات لتتذكري دائمًا كم أنتِ غالية على قلبي، وكم يُشرق يومي حين أسمع صوتكِ أو ألمح ابتسامتكِ الجميلة. أنتِ اللحظة الحلوة في كل يوم، والراحة التي ألتجئ إليها دائمًا.</p>
+      <p>أنا ممتن جدًا لكل مكالمة بيننا تبدأ بحكاية وتستمر في ضحك وسعادة لا ينتهيان. صوتكِ يبعث في نفسي الطمأنينة والسرور، ووجودكِ يعطي كل شيء في حياتي طعمًا أجمل وأرقى.</p>
+      <div class="hidden-letter" id="hiddenLetter">
+        <p>كل يوم يمر وأنتِ معي يزداد يقيني بأنكِ أجمل هدايا القدر. أحب كيف تتفهمينني، وكيف تملئين الأجواء بالفرح، وكيف تجعلين من أبسط الأمور لحظات ساحرة لا تُنسى.</p>
+        <p>وجودكِ يملأ قلبي بالطمأنينة. أريد دائمًا أن أراكِ مسرورة، وأن أكون سببًا في رسم الضحكة على وجهكِ المشرق. أنتِ لستِ فقط حبيبتي، بل أنتِ صديقتي المفضلة وسندي وتوأم روحي.</p>
+        <p>أحب ضحكتكِ المتأخرة في الليل، وأحب سوالفكِ العذبة، وأحب اهتمامكِ الرقيق. كل هذه الأشياء تجعلني أقدركِ وأحبكِ أكثر في كل لحظة.</p>
+        <p>سنسير معًا دائمًا في طريق يملؤه الاحترام المتبادل، والود، والتفاهم، والأيام السعيدة المشرقة بإذن الله. سأظل دائمًا هنا لأجلكِ، أشارككِ أفراحكِ وأحلامكِ وأسعد بوجودكِ بجانبي.</p>
+        <p>أحبكِ جدًا يا شوشو، وأتمنى لكِ كل السعادة التي في الكون لأنكِ تستحقين الأجمل دائمًا وابدًا.</p>
+      </div>
+      <div class="signature">لكِ كل الحب، مودي ♡</div><div class="seal">♡</div>
+    </article>
+    <button class="cta letter-toggle" id="letterToggle">افتحي بقية الرسالة <span>✉</span></button>
+  </div>
+</section>
+
+<section class="love" id="love">
+  <div class="section-head"><div class="kicker">مشاعر لا تنتهي</div><h2>أحبك</h2><p>اضغطي على كل بطاقة لتكتشفي المزيد من أسرار قلبي بكِ.</p></div>
+  <div class="love-grid">
+    <article class="glass love-card" tabindex="0"><div class="icon">♡</div><h3>أحب ابتسامتكِ</h3><p>لأنها تضيء يومي وتجعل الدنيا أكثر جمالًا.</p><p class="extra">وأحب التفاصيل الصغيرة التي تجعل عينيكِ تلمعان بالفرح.</p></article>
+    <article class="glass love-card" tabindex="0"><div class="icon">♫</div><h3>أحب صوتكِ</h3><p>كأنه معزوفة دافئة ترد الروح والاطمئنان.</p><p class="extra">حتى حديثنا العادي معكِ يصبح أجمل أوقات نهار وليلي.</p></article>
+    <article class="glass love-card" tabindex="0"><div class="icon">☾</div><h3>أحب سهراتنا</h3><p>حين نتشارك الحكايات والضحكات تحت ضوء القمر.</p><p class="extra">أحب كيف ننسى الوقت معًا وكيف تمتلئ الأجواء بالود والسعادة.</p></article>
+  </div>
+</section>
+
+<section class="memories" id="memories">
+  <div class="section-head"><div class="kicker">لحظات حُفرت في الوجدان</div><h2>ذكرياتنا</h2><p>كل ذكرى معكِ هي بستان أزهار في قلبي. أترقب بشوق كل اللحظات السعيدة القادمة التي سنضيفها إلى كتاب حكايتنا.</p></div>
+  <div class="memory-grid">
+    <article class="polaroid" style="--tilt:-3deg" tabindex="0"><div class="photo"><div class="moon-mini"></div><div class="hug"></div></div><div class="caption">ضوء السعادة والقمر</div></article>
+    <article class="polaroid" style="--tilt:2deg" tabindex="0"><div class="photo" style="background:linear-gradient(180deg,#171d3c,#665080 58%,#d89bb9)"><div class="moon-mini" style="right:auto;left:27px;top:34px;width:49px;height:49px"></div><div class="hug"></div></div><div class="caption">حديث القلب للقلب</div></article>
+    <article class="polaroid" style="--tilt:-1deg" tabindex="0"><div class="photo" style="background:linear-gradient(180deg,#27203f,#9a668e 60%,#efbdc8)"><div class="moon-mini" style="top:25px;right:44px;width:53px;height:53px"></div><div class="hug"></div></div><div class="caption">سعادة بجواركِ</div></article>
+  </div>
+  <p class="memory-note">وأمامنا مستقبل مشرق مليء بالذكريات الأجمل والأكثر بهجة بأمر الله.</p>
+</section>
+
+<section class="story" id="little-things">
+  <div class="section-head"><div class="kicker">جمال روحكِ في قلبي</div><h2>تفاصيلكِ العذبة</h2><p>كل جانب من شخصيتكِ الجميلة يزيدني حبًا واعتزازًا بكِ كل يوم.</p></div>
+  <div class="story-grid">
+    <article class="glass story-card"><div class="symbol">☁</div><h3>رقتكِ ولطفكِ</h3><p>أنتِ تمتلكين قلباً طيباً يفيض نبلًا ولطفًا. رؤية اهتمامكِ ورقتكِ تجعلني أشعر بأنني أسعد شخص في العالم لأنكِ في حياتي.</p></article>
+    <article class="glass story-card"><div class="symbol">☕</div><h3>أجمل الأوقات</h3><p>حتى أبسط اللحظات معكِ تكون مفعمة بالحياة والحب. مكالمة هادئة، ضحكة عفوية، أو كلمة طيبة منكِ تجعل يومي ممتلئًا بالطاقة الإيجابية.</p></article>
+    <article class="glass story-card"><div class="symbol">✉</div><h3>صدقكِ ونقاء روحكِ</h3><p>أعشق الصدق والراحة التي أجدها معكِ. بيننا مكان دائم للحديث الصريح الشفاف، والقلوب الهادئة المترابطة بالحب والاحترام.</p></article>
+    <article class="glass story-card"><div class="symbol">☾</div><h3>سحر الليل معكِ</h3><p>في هدوء الليل، أتذكر كلامنا السعيد وضحكاتنا الحلوة وأحس بالامتنان الكبير لله لأنكِ قمري وحبيبتي التي تنور دنيتي.</p></article>
+    <article class="glass story-card" style="grid-column:1/-1"><div class="poem">يا شوشو يا نبع الوفاء وجماله،
+يا من جعلتِ العمر يزهر بالمنى،
+بوعدٍ وثيقٍ بالحب والصدق نلتقي،
+لنصنع معًا أحلى الأماني والهنا.</div></article>
+  </div>
+</section>
+
+<section class="timeline" id="timeline">
+  <div class="section-head"><div class="kicker">محطات في رحلة الحب</div><h2>معًا دائمًا</h2><p>طريقنا مفروش بالورد والمحبة والصدق والخطوات الواثقة نحو غدٍ أجمل.</p></div>
+  <div class="timeline-line">
+    <article class="event"><span class="dot"></span><time>بداية الحكاية</time><h3>شرارة الحب الصادق</h3><p>أيام بدأت فيها أجمل حكاية حب، وعرفت فيها معنى أن يكون للقلب موطن يطمئن إليه.</p></article>
+    <article class="event"><span class="dot"></span><time>عهد الحب الأبدي</time><h3>مواثيق القلوب الوفية</h3><p>تاريخٌ محفور بالنور في قلب الحكاية: عهدٌ دائم يجمعنا في بهجة وصفاء وقربٍ يستمر للأبد.</p><div class="date-card"><span>♡</span><span>عهدٌ دائم ونبضٌ واحد</span><span>—</span><span>شوشو & مودي</span></div></article>
+    <article class="event"><span class="dot"></span><time>مستقبلنا الحافل</time><h3>نحلق معًا نحو الأحلام</h3><p>نستقبل غدًا بكل حب وأمل ورضا، أيدينا متطابقة وقلوبنا واحدة لبناء أجمل الذكريات السعيدة.</p></article>
+  </div>
+</section>
+
+<section class="together" id="together">
+  <div class="final-inner">
+    <div class="tiny-moon">☾</div>
+    <div class="kicker">إلى قمري… في كل ليلة</div>
+    <h2>وأخيرًا أشرقت ليلتي</h2>
+    <blockquote>«وأخيرًا أشرقت ليلتي، وعاد قمري إلى مكانه… شوشو، أنتِ القمر الذي خُلق لعينيّ وحدهما، وأنتِ الحكاية التي أريد أن أعيشها إلى الأبد.»</blockquote>
+    <p>يا شوشو، الكلمات تعجز عن وصف مقدار حبكِ في قلبي، ولكن أردت أن أترك لكِ هذا المكان الدائم لتتذكري دائمًا كم أنتِ غالية وساحرة ومحبوبة جداً.</p>
+    <button class="cta" id="heartBtn">انشري القلوب في سمائنا <span>♡</span></button>
+  </div>
+</section>
+</main>
+<footer class="footer">من مودي إلى شوشو، بكل الحب والوفاء اللي في قلبي <span>♡</span> — حكايتنا مستمرة بكل فرحة.</footer>
+</div>
+<div class="toast" id="toast" role="status">وصل حبكِ إلى السماء ♡</div>
+
+<script>
+// Ambient Background Music Synth Generator (Web Audio API - Automatic Continuous Playback)
+class BackgroundMusic {
+  constructor() {
+    this.ctx = null;
+    this.isPlaying = false;
+    this.chords = [
+      [261.63, 329.63, 392.00, 523.25], // C Major 7 (Warm, pure)
+      [220.00, 261.63, 329.63, 392.00], // A Minor 7 (Romantic)
+      [174.61, 220.00, 261.63, 349.23], // F Major 7 (Lush, sweet)
+      [196.00, 246.94, 293.66, 392.00]  // G Major (Bright, happy)
+    ];
+    this.chordIndex = 0;
+  }
+
+  init() {
+    if (this.ctx) return;
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    this.ctx = new AudioCtx();
+    this.masterGain = this.ctx.createGain();
+    this.masterGain.gain.setValueAtTime(0.08, this.ctx.currentTime); // Soft background level
+    this.masterGain.connect(this.ctx.destination);
+    this.isPlaying = true;
+    this.playNextChord();
+  }
+
+  playNextChord() {
+    if (!this.isPlaying || !this.ctx) return;
+    const notes = this.chords[this.chordIndex];
+    this.chordIndex = (this.chordIndex + 1) % this.chords.length;
+
+    const now = this.ctx.currentTime;
+    const duration = 6.0;
+
+    notes.forEach((freq) => {
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(freq, now);
+
+      // Soft envelope for warm pad sound
+      gain.gain.setValueAtTime(0, now);
+      gain.gain.linearRampToValueAtTime(0.025, now + 2.5);
+      gain.gain.linearRampToValueAtTime(0, now + duration);
+
+      osc.connect(gain);
+      gain.connect(this.masterGain);
+
+      osc.start(now);
+      osc.stop(now + duration);
+    });
+
+    setTimeout(() => this.playNextChord(), (duration - 1.5) * 1000);
+  }
+}
+
+const music = new BackgroundMusic();
+
+// Start music automatically on page load or immediate interaction
+window.addEventListener('load', () => {
+  music.init();
+});
+['click', 'touchstart', 'scroll', 'keydown'].forEach(evt => {
+  window.addEventListener(evt, () => {
+    if (music.ctx && music.ctx.state === 'suspended') {
+      music.ctx.resume();
+    } else {
+      music.init();
+    }
+  }, { once: false });
+});
+
+// Canvas Interactive Stars Background
+const canvas = document.getElementById('stars');
+const ctx = canvas.getContext('2d');
+let stars = [];
+
+function resizeStars() {
+  canvas.width = innerWidth * devicePixelRatio;
+  canvas.height = innerHeight * devicePixelRatio;
+  canvas.style.width = innerWidth + 'px';
+  canvas.style.height = innerHeight + 'px';
+  ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+  stars = Array.from({ length: Math.min(180, Math.floor(innerWidth / 5)) }, () => ({
+    x: Math.random() * innerWidth,
+    y: Math.random() * innerHeight,
+    r: Math.random() * 1.6 + .3,
+    a: Math.random() * .75 + .2,
+    s: Math.random() * .015 + .004,
+    p: Math.random() * 6.28
+  }));
+}
+
+function drawStars() {
+  ctx.clearRect(0, 0, innerWidth, innerHeight);
+  for (const s of stars) {
+    s.p += s.s;
+    const alpha = s.a * (.6 + .4 * Math.sin(s.p));
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255, 224, 241, ${alpha})`;
+    ctx.fill();
+  }
+  requestAnimationFrame(drawStars);
+}
+
+addEventListener('resize', resizeStars);
+resizeStars();
+drawStars();
+
+// Skyline Building Generation
+const skyline = document.getElementById('skyline');
+for (let i = 0; i < 23; i++) {
+  const b = document.createElement('div');
+  b.className = 'building';
+  b.style.height = (38 + Math.random() * 58) + '%';
+  b.style.flexGrow = (.5 + Math.random() * 1.1);
+  skyline.appendChild(b);
+}
+
+// Navigation Menu
+const menuBtn = document.getElementById('menuBtn');
+const navlinks = document.getElementById('navlinks');
+menuBtn.addEventListener('click', () => navlinks.classList.toggle('open'));
+navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navlinks.classList.remove('open')));
+
+// Hidden Letter Toggle
+const toggle = document.getElementById('letterToggle');
+const hidden = document.getElementById('hiddenLetter');
+toggle.addEventListener('click', () => {
+  const open = hidden.classList.toggle('open');
+  toggle.innerHTML = open ? 'أغلقي باقي الرسالة <span>♡</span>' : 'افتحي بقية الرسالة <span>✉</span>';
+  if (open) hidden.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+});
+
+// Interactive Love Cards
+document.querySelectorAll('.love-card').forEach(card => {
+  const flip = () => card.classList.toggle('active');
+  card.addEventListener('click', flip);
+  card.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      flip();
+    }
+  });
+});
+
+// Floating Hearts Effect
+function floatHeart() {
+  const el = document.createElement('span');
+  el.className = 'float';
+  el.textContent = ['♡', '✧', '♥', '⋆', '🌸'][Math.floor(Math.random() * 5)];
+  el.style.left = Math.random() * 100 + 'vw';
+  el.style.fontSize = (14 + Math.random() * 24) + 'px';
+  el.style.animationDuration = (6 + Math.random() * 6) + 's';
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 14000);
+}
+setInterval(floatHeart, 900);
+
+// Toast & Heart Explosion Button
+const toast = document.getElementById('toast');
+let toastTimer;
+document.getElementById('heartBtn').addEventListener('click', () => {
+  for (let i = 0; i < 25; i++) setTimeout(floatHeart, i * 60);
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove('show'), 2800);
+});
+
+// Polaroid Tilt Reset Effect
+document.querySelectorAll('.polaroid').forEach(p => {
+  p.addEventListener('click', () => {
+    p.style.transform = 'rotate(0deg) scale(1.05)';
+    setTimeout(() => p.style.transform = '', 750);
+  });
+  p.addEventListener('keydown', e => {
+    if (e.key === 'Enter') p.click();
+  });
+});
+</script>
+</body>
+</html>
